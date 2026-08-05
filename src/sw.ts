@@ -31,10 +31,9 @@ self.addEventListener('message', (event) => {
 });
 
 // SPA fallback: return the app shell for navigation requests.
-// The worker is served from /app/, so its scope is limited to the app and it
-// never intercepts the marketing landing page at the site root.
+// The worker is served from the root of the app's own subdomain.
 registerRoute(
-  new NavigationRoute(createHandlerBoundToURL('/app/index.html'))
+  new NavigationRoute(createHandlerBoundToURL('/index.html'))
 );
 
 // Cache Google Fonts at runtime.
@@ -51,8 +50,8 @@ self.addEventListener('push', (event) => {
   const title = data.notification?.title || data.title || 'Korgix';
   const options = {
     body: data.notification?.body || data.body || 'You have a new notification',
-    icon: data.notification?.icon || data.icon || '/app/icons/Korgix.png',
-    badge: data.notification?.badge || data.badge || '/app/icons/Korgix.png',
+    icon: data.notification?.icon || data.icon || '/icons/Korgix.png',
+    badge: data.notification?.badge || data.badge || '/icons/Korgix.png',
     tag: data.notification?.tag || data.data?.tag || data.tag || 'fcm-default',
     requireInteraction: true,
     data: data.data || data,
@@ -70,7 +69,7 @@ self.addEventListener('notificationclick', (event) => {
         if (windowClients.length > 0) {
           windowClients[0].focus();
         } else {
-          self.clients.openWindow('/app/');
+          self.clients.openWindow('/');
         }
       })
   );

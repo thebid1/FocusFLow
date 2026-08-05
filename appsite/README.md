@@ -27,5 +27,5 @@ Then visit `http://localhost:8080/`.
 ## Notes
 
 - The subscribe form posts to Formspree (`https://formspree.io/f/xwvglojw`) via `fetch`, so visitors stay on the page; without JavaScript it falls back to a regular form POST.
-- The "Install App" and CTA buttons link to the live PWA at `https://korgix.vercel.app/app`.
+- The "Install App" and CTA buttons link to the live PWA at `https://app.korgix.xyz`.
 - Animations fall back gracefully if GSAP fails to load.

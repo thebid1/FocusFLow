@@ -1,10 +1,10 @@
 # Korgix
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-korgix.vercel.app-blue)](https://korgix.vercel.app/app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-app.korgix.xyz-blue)](https://app.korgix.xyz)
 
 A progressive web app for daily task planning and focus tracking. Create time-boxed tasks, receive push notifications when they start and end, and review completion analytics.
 
-**Live app:** [https://korgix.vercel.app/app](https://korgix.vercel.app/app) — the site root hosts the marketing landing page; the PWA lives under `/app/`.
+**Live app:** [https://app.korgix.xyz](https://app.korgix.xyz) — the PWA is deployed from the repo root. The marketing landing page is deployed separately from `appsite/` at [https://korgix.xyz](https://korgix.xyz).
 
 ---
 

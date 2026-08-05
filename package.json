@@ -1,11 +1,11 @@
 {
   "name": "korgix",
   "private": true,
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && tsc && vite build && cp appsite/index.html appsite/styles.css appsite/animations.js appsite/sw.js dist/ && cp -r appsite/icons dist/",
+    "build": "rm -rf dist && tsc && vite build",
     "preview": "vite preview",
     "deploy:firebase": "firebase deploy --only functions"
   },

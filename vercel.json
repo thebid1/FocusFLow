@@ -5,8 +5,8 @@
   "installCommand": "npm ci",
   "redirects": [
     {
-      "source": "/appsite/:path*",
-      "destination": "/",
+      "source": "/app/:path*",
+      "destination": "/:path*",
       "permanent": false
     }
   ]
