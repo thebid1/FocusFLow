@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# The app itself (app.korgix.xyz) is an empty shell rendered client-side and
+# sends its own X-Robots-Tag: noindex — nothing there is worth indexing.
+
+Sitemap: https://korgix.xyz/sitemap.xml

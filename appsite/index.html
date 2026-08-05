@@ -3,10 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Korgix — Plan your day. Stay on track.</title>
-  <meta name="description" content="Korgix is a time-boxed task planner that helps you focus, stay on schedule, and build productive routines.">
-  <link rel="icon" type="image/png" href="icons/Korgix.png">
+  <title>Korgix — Time-Boxed Task Planner &amp; Focus App</title>
+  <meta name="description" content="Korgix turns your to-do list into time-boxed focus sessions. Set a window for each task, get notified when it starts and ends, and review what you actually finished. Free and works offline.">
+  <link rel="canonical" href="https://korgix.xyz/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Open Graph: Facebook, LinkedIn, WhatsApp, iMessage, Slack, Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Korgix">
+  <meta property="og:url" content="https://korgix.xyz/">
+  <meta property="og:title" content="Korgix — Time-Boxed Task Planner &amp; Focus App">
+  <meta property="og:description" content="Turn an endless to-do list into time-boxed focus sessions. Set a window, get notified when it starts and ends, and review what you actually finished.">
+  <meta property="og:image" content="https://korgix.xyz/icons/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Korgix — plan your day, stay on track">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Korgix — Time-Boxed Task Planner &amp; Focus App">
+  <meta name="twitter:description" content="Turn an endless to-do list into time-boxed focus sessions. Free, installable, works offline.">
+  <meta name="twitter:image" content="https://korgix.xyz/icons/og-image.png">
+  <meta name="twitter:image:alt" content="Korgix — plan your day, stay on track">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/logo-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="animations.js" defer></script>
@@ -16,7 +43,7 @@
   <nav class="nav" id="nav">
     <div class="container nav-inner">
       <a href="#" class="logo">
-        <img src="icons/Korgix.png" alt="Korgix">
+        <img src="icons/logo-192.png" alt="Korgix" width="32" height="32">
         <span>Korgix</span>
       </a>
       <div class="nav-links">
@@ -427,7 +454,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a href="#" class="footer-brand">
-        <img src="icons/Korgix.png" alt="Korgix">
+        <img src="icons/logo-192.png" alt="Korgix" width="28" height="28" loading="lazy">
         <span>Korgix</span>
       </a>
       <div class="footer-links">
@@ -482,6 +509,34 @@
         }
       });
     })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Korgix",
+    "url": "https://korgix.xyz/",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "browserRequirements": "Requires a modern browser with JavaScript enabled",
+    "description": "Korgix is a time-boxed task planner that turns your to-do list into focused work sessions, with notifications when each task starts and ends.",
+    "image": "https://korgix.xyz/icons/og-image.png",
+    "screenshot": "https://korgix.xyz/icons/og-image.png",
+    "installUrl": "https://app.korgix.xyz",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Time-boxed tasks with a start and end time",
+      "Push and local notifications when tasks start and end",
+      "Recurring daily, weekly, and custom routines",
+      "Focus analytics for completion rate and missed tasks",
+      "Installable progressive web app with offline support"
+    ]
+  }
   </script>
 </body>
 </html>
