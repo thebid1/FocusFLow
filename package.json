@@ -10,6 +10,7 @@
     "deploy:firebase": "firebase deploy --only functions"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "date-fns": "^3.6.0",
     "firebase": "^12.12.1",
     "idb": "^8.0.0",

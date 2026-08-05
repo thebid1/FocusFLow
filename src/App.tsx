@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { TaskListView } from './components/TaskListView';
 import { AnalyticsView } from './components/AnalyticsView';
 import { AddTaskView } from './components/AddTaskView';
@@ -224,6 +225,7 @@ function App() {
           />
         </div>
       )}
+      <Analytics />
     </div>
   );
 }
