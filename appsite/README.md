@@ -23,6 +23,7 @@ Then visit `http://localhost:8080/`.
 - `animations.js` — GSAP + ScrollTrigger scroll animations and interactions.
 - `icons/Korgix.png` — App icon used by the nav, footer, and favicon.
 - `sw.js` — Migration shim served at the site root: unregisters the old root-scoped PWA service worker from before the app moved to `/app/`. Not part of the landing page itself.
+- `vercel.json` — Deploy config for this directory's own Vercel project: no build, no install, serves these files as-is.
 
 ## Notes
 
